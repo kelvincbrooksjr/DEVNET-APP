@@ -20,12 +20,12 @@
         <div class="header-container">
             <header class="wrapper clearfix">
                 {% block header %}
-                <h1 class="title"> {% block title %} of CyBrnexus {% endblock %} </h1>
+                <h1 class="title"> Cybrnexus {{ title }} </h1>
                 <nav>
                     <ul>
-                        <li><a href="#">Study N Lab</a></li>
-                        <li><a href="#">Content</a></li>
-                        <li><a href="#">Home</a></li>
+                        <li><a href="{{ url_for('resources') }}">Study N Lab</a></li>
+                        <li><a href="{{ url_for('content') }}">Content</a></li>
+                        <li><a href="{{ url_for('index') }}">Home</a></li>
                     </ul>
                 </nav>
                 {% endblock %}            

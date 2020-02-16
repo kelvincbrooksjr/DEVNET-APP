@@ -1,12 +1,7 @@
 {% extends 'base.html' %}
 {% block header %}
-<h1 class="title"> Main Page </h1>
+<h1 class="title"> {{ title }} </h1>
     <nav>
-        <ul>
-            <li><a href="{{ url_for('resources') }}">Study N Lab</a></li>
-            <li><a href="{{ url_for('content') }}">Content</a></li>
-            <li><a href="{{ url_for('index') }}">Home</a></li>
-        </ul>
     </nav>
 {% endblock %} 
 

@@ -1,12 +1,20 @@
 import os
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, redirect
 
 app = Flask(__name__)
 
 @app.route("/")
 @app.route("/index")
-def home():
-    return render_template("index.html")
+def index():
+    return render_template("index.html", title = "Home Page")
+
+@app.route("/content")
+def content():
+    return render_template("content.html", title = "Content")
+
+@app.route("/resources")
+def resources():
+    return render_template("resources.html", title = "Resources")
 
 @app.after_request
 def add_header(r):
