@@ -10,7 +10,7 @@ def index():
 
 @app.route("/content")
 def content():
-    return render_template("content.html", title = "Content")
+    return render_template("content.html", title = "Blog")
 
 @app.route("/resources")
 def resources():
