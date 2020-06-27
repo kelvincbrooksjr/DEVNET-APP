@@ -1,13 +1,6 @@
 {% extends 'base.html' %}
 {% block header %}
-<h1 class="title"> Main Page </h1>
-    <nav>
-        <ul>
-            <li><a href="{{ url_for('resources') }}">Resources</a></li>
-            <li><a href="{{ url_for('content') }}">Blog</a></li>
-            <li><a href="{{ url_for('index') }}">Home</a></li>
-        </ul>
-    </nav>
+{{ super() }}
 {% endblock %} 
 
 {% block content %}
@@ -19,8 +12,6 @@
              resources here as I progress.  I hope this will in turn aid someone else.
          </p>
 
-         <h3>Youtube Posts</h3>
-         <iframe src="http://www.youtube.com/embed/?listType=user_uploads&list=cybrnexus" width="480" height="400" frameborder="0"></iframe>
     </header>
 {% endblock %}
 

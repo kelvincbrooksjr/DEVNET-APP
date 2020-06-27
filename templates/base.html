@@ -14,16 +14,18 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
         
         <script src="{{ url_for('static', filename='js/vendor/modernizr-2.8.3-respond-1.4.2.min.js') }}"></script>
+
     </head>
     <body>
 
         <div class="header-container">
             <header class="wrapper clearfix">
                 {% block header %}
-                <h1 class="title"> Cybrnexus {{ title }} </h1>
+                <img src=" {{ url_for('static', filename='img/cachedchecks2.png') }} " alt="CachedCheck$" style="float:left;width:100px;height:100px;">
+                <h1 class="title">     CachedChecks {{ title }} </h1>
                 <nav>
                     <ul>
-                        <li><a href="{{ url_for('resources') }}">Study N Lab</a></li>
+                        <li><a href="{{ url_for('resources') }}">Resources</a></li>
                         <li><a href="{{ url_for('content') }}">Content</a></li>
                         <li><a href="{{ url_for('index') }}">Home</a></li>
                     </ul>
@@ -52,7 +54,7 @@
                 </article>
                 
                 {% block sideview %}
-                <aside>
+                <aside class=backgroundimage>
                     <h3>Certification Journey</h3>
                     <p>Currently certs include a CCNA R/S, AWS Solutions Architect Assosicate,
                         Cisco DevNet Associate, and JNCIA-Junos.
